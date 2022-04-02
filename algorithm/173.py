@@ -1,7 +1,6 @@
 # 173. Binary Search Tree Iterator
 # https://leetcode.com/problems/binary-search-tree-iterator/
 
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -18,7 +17,7 @@ class BSTIterator:
 
     def next(self) -> int:
         node = self.stack.pop()
-        tmp = node.right:
+        tmp = node.right
         while tmp:
             self.stack.append(tmp)
             tmp = tmp.left
