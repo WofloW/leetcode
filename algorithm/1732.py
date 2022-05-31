@@ -9,3 +9,5 @@ class Solution:
             altitude += g
             highest = max(highest, altitude)
         return highest
+
+        # return max(accumulate(gain, initial=0))
