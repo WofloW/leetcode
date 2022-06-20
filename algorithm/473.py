@@ -21,8 +21,8 @@ class Solution:
             if pos == len(matchsticks):
                 return True
 
+            length = matchsticks[pos]
             for i in range(4):
-                length = matchsticks[pos]
                 if buckets[i] >= length:
                     buckets[i] -= length
                     if dfs(pos + 1):
